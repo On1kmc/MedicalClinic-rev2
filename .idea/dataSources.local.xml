@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal" created-in="IU-222.4345.14">
+    <data-source name="MedicalClinic@localhost" uuid="0336963e-75bd-4840-92c3-eaddd48f81bf">
+      <database-info product="PostgreSQL" version="14.4" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.5.0" dbms="POSTGRES" exact-version="14.4" exact-driver-version="42.5">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>postgres</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="database" qname="@">
+            <node kind="schema" qname="@" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+    <data-source name="postgres@localhost" uuid="16551453-a883-47cd-9035-56685f2117bd">
+      <database-info product="PostgreSQL" version="14.5 (Debian 14.5-1.pgdg110+1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.5.0" dbms="POSTGRES" exact-version="14.5" exact-driver-version="42.5">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>baeldung</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="database" qname="@">
+            <node kind="schema" qname="@" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+    <data-source name="postgres@localhost [2]" uuid="aa7191e4-0260-49a2-adc9-4cdfa864008a">
+      <database-info product="PostgreSQL" version="14.5 (Debian 14.5-1.pgdg110+1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.5.0" dbms="POSTGRES" exact-version="14.5" exact-driver-version="42.5">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>baeldung</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="database" qname="@">
+            <node kind="schema" qname="@" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+  </component>
+</project>

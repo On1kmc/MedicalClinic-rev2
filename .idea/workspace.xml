@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3229fea7-a4cb-4539-b204-1590e710fae8" name="Changes" comment="Added docker-compose setup and Kafka support">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KafkaApp/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KafkaApp/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KafkaApp/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KafkaApp/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KafkaApp/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KafkaApp/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KafkaApp/src/main/java/com/ivanov/kafkaapp/KafkaAppApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KafkaApp/src/main/java/com/ivanov/kafkaapp/controller/MsgController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KafkaApp/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KafkaApp/src/test/java/com/ivanov/kafkaapp/KafkaAppApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KafkaForClinic/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KafkaForClinic/src/main/java/KafkaApp.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2L2e3sGR3PXqs1ysWu2MrxLE5O4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Soft/education/MedicalClinic&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.44827586&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;cabce1ea842dd8aa4eb74f49dfb777c2&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Soft\education\MedicalClinic\MedicalClinicApp" />
+      <recent name="D:\Soft\education\MedicalClinic" />
+      <recent name="D:\Soft\education\MedicalClinic\LaboratoryApp" />
+      <recent name="D:\Soft\education\MedicalClinic\src\main\resources\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Soft\education\MedicalClinic\MedicalClinicApp" />
+      <recent name="D:\Soft\education\MedicalClinic\LaboratoryApp" />
+      <recent name="D:\Soft\education\MedicalClinic\ClinicApp" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ivanov.MedicalClinic.dto" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.MedicalClinicApplication (3)">
+    <configuration name="KafkaAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="KafkaApp" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ivanov.kafkaapp.KafkaAppApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LaboratoryForMedicalCLinicApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="LaboratoryApp" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ivanov.laboratory.LaboratoryForMedicalCLinicApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ivanov.laboratory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LaboratoryForMedicalCLinicApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="MedicalClinic" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ivanov.laboratory.LaboratoryForMedicalCLinicApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ivanov.laboratory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MedicalClinicApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="MedicalClinic" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ivanov.MedicalClinic.MedicalClinicApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ivanov.MedicalClinic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MedicalClinicApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="ClinicApp" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ivanov.MedicalClinic.MedicalClinicApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ivanov.MedicalClinic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MedicalClinicApplication (3)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="MedicalClinicApp" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ivanov.MedicalClinic.MedicalClinicApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ivanov.MedicalClinic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MedicalClinicApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="MedicalClinic" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.MedicalClinic.MedicalClinicApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.MedicalClinicApplication (3)" />
+        <item itemvalue="Spring Boot.LaboratoryForMedicalCLinicApplication (1)" />
+        <item itemvalue="Spring Boot.MedicalClinicApplication (2)" />
+        <item itemvalue="Spring Boot.LaboratoryForMedicalCLinicApplication" />
+        <item itemvalue="Spring Boot.MedicalClinicApplication (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3229fea7-a4cb-4539-b204-1590e710fae8" name="Changes" comment="" />
+      <created>1675073415642</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675073415642</updated>
+      <workItem from="1675073417049" duration="1422000" />
+      <workItem from="1675074921545" duration="3572000" />
+      <workItem from="1675105246693" duration="18244000" />
+      <workItem from="1675794016488" duration="1363000" />
+      <workItem from="1675795708599" duration="606000" />
+      <workItem from="1675796537729" duration="33394000" />
+      <workItem from="1676485600922" duration="2575000" />
+      <workItem from="1676634478073" duration="16438000" />
+      <workItem from="1676800025073" duration="4540000" />
+      <workItem from="1677066454239" duration="3416000" />
+      <workItem from="1678216307905" duration="92000" />
+      <workItem from="1679340335023" duration="1822000" />
+      <workItem from="1679596800208" duration="11291000" />
+      <workItem from="1680160600954" duration="5102000" />
+      <workItem from="1680166265026" duration="8236000" />
+      <workItem from="1680183585020" duration="21000" />
+      <workItem from="1680183627086" duration="436000" />
+      <workItem from="1680184088582" duration="38000" />
+    </task>
+    <task id="LOCAL-00001" summary="First commit. Configure Entities, some Controllers.">
+      <created>1675109172765</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675109172765</updated>
+    </task>
+    <task id="LOCAL-00002" summary="First commit. Configure Entities, some Controllers.">
+      <created>1675109207376</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675109207376</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added create client support on /owner/new">
+      <created>1675194323330</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675194323330</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added create Order service and send that to LaboratoryApp to processing.">
+      <created>1676191660228</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676191660228</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added DTO for models, MapStruct mappers.">
+      <created>1676459268692</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676459268692</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added order-page and refresh status of order service. Added scheduled refresh AnalyzeDB from LaboratoryApp. Some fixed bugs.">
+      <created>1676664138207</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676664138208</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Merge with Laboratory in one project. Now I can try to use Docker">
+      <created>1679599386647</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1679599386647</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Merge with Laboratory in one project. Now I can try to use Docker">
+      <created>1680183512476</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1680183512476</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added docker-compose setup and Kafka support">
+      <created>1680183731834</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1680183731834</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First commit. Configure Entities, some Controllers." />
+    <MESSAGE value="Added create client support on /owner/new" />
+    <MESSAGE value="Added create Order service and send that to LaboratoryApp to processing." />
+    <MESSAGE value="Added DTO for models, MapStruct mappers." />
+    <MESSAGE value="Added order-page and refresh status of order service. Added scheduled refresh AnalyzeDB from LaboratoryApp. Some fixed bugs." />
+    <MESSAGE value="Merge with Laboratory in one project. Now I can try to use Docker" />
+    <MESSAGE value="Added docker-compose setup and Kafka support" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added docker-compose setup and Kafka support" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint type="java-exception">
+          <properties class="java.net.ConnectException" package="java.net" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

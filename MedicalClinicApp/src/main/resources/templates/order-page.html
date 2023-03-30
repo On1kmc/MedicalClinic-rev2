@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Страница заказа</title>
+</head>
+<body>
+<h1 style="text-align: center" th:text="'Заказ № ' + ${order}"></h1>
+
+<table style="margin: 0 auto; width: 600px;" border="2">
+    <thead>
+    <tr>
+        <th>Анализ</th>
+        <th>Статус анализа</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="status : ${list}">
+        <td style="text-align: center">
+            <a th:text="${status.getName()}">analyze</a>
+        </td>
+        <td style="text-align: center">
+            <a th:text="${status.getStatus()}">status</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<hr/>
+<br>
+<table style="margin: 0 auto; width: 300px">
+    <tbody>
+    <tr>
+        <td style="text-align: center">
+            <form th:method="GET" th:action="@{/owner}">
+                <input type="submit" value="К списку клиентов"/>
+            </form>
+        </td>
+        <td style="text-align: center">
+            <form th:method="GET" th:action="@{/static}">
+                <input type="submit" value="Перейти на главную"/>
+            </form>
+        </td>
+
+    </tr>
+    </tbody>
+
+</table>
+</body>
+</html>

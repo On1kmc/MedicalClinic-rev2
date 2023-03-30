@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Страница клиента</title>
+</head>
+<body>
+<h1 style="text-align: center" th:text="${client.getName()} + ' ' + ${client.getSurname()}"></h1>
+<h2 style="text-align: center">Заказы</h2>
+
+<table style="margin: 0 auto; width: 600px;" border="2">
+  <thead>
+  <tr>
+    <th>Номер заказа</th>
+    <th>Дата заказа</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr th:each="order : ${orderList}">
+    <td style="text-align: center">
+      <a th:text="${order.getId()}" th:href="@{/order/{id}(id=${order.getId()})}">client</a>
+    </td>
+    <td style="text-align: center">
+      <a th:text="${order.getDateOfOrder()}"></a>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+<hr/>
+<br>
+<table style="margin: 0 auto; width: 300px">
+  <tbody>
+  <tr>
+    <td style="text-align: center">
+      <form th:method="GET" th:action="@{/owner}">
+        <input type="submit" value="К списку клиентов"/>
+      </form>
+    </td>
+    <td style="text-align: center">
+      <form th:method="GET" th:action="@{/static}">
+        <input type="submit" value="Перейти на главную"/>
+      </form>
+    </td>
+
+  </tr>
+  </tbody>
+
+</table>
+</body>
+</html>

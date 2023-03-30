@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register new owner</title>
+</head>
+<body>
+<form th:method="POST" th:action="@{/owner/new}" th:object="${client}">
+    <table align="center">
+        <tbody>
+        <tr>
+            <td>
+                <label for="name">Имя</label>
+            </td>
+            <td>
+                <input type="text" th:field="*{name}" id="name">
+            </td>
+            <td>
+                <p th:if="${#fields.hasErrors('name')}" style="color:red" th:errors="*{name}">ERROR</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="surname">Фамилия</label>
+            </td>
+            <td>
+                <input type="text" th:field="*{surname}" id="surname">
+            </td>
+            <td>
+                <p th:if="${#fields.hasErrors('surname')}" style="color:red" th:errors="*{surname}">ERROR</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="birth">Дата рождения</label>
+            </td>
+            <td>
+                <input th:type="date" id="birth" name="birth" th:field="${client.dateOfBirth}">
+            </td>
+            <td>
+                <p th:if="${#fields.hasErrors('dateOfBirth')}" style="color:red" th:errors="*{client.dateOfBirth}">ERROR</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Добавить"/>
+            </td>
+            <td>
+                <button type="button" class="btn btn-primary" onclick="window.history.back();">Cancel</button>
+            </td>
+        </tr>
+
+
+        </tbody>
+    </table>
+</form>
+</body>
+</html>

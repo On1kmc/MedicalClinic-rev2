@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Список пациентов</title>
+</head>
+<body>
+<h1 align="center">Список всех пациентов</h1>
+
+<table style="margin: 0 auto; width: 600px;" border="2">
+  <thead>
+  <tr>
+    <th>Имя</th>
+    <th>Фамилия</th>
+    <th>Дата рождения</th>
+    <th></th>
+    <th></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr th:each="client : ${clients}">
+    <td style="text-align: center">
+      <a th:text="${client.getName()}">client</a>
+    </td>
+    <td th:text="${client.getSurname()}" align="center"></td>
+    <td align="center" th:text="${#dates.format(client.getDateOfBirth(), 'dd-MM-YYYY')}">
+    </td>
+    <td style="text-align: center">
+      <form th:action="@{/owner/{id}(id=${client.getId()})}">
+      <button>Список заказов</button>
+      </form>
+    </td>
+    <td style="text-align: center"><form th:action="@{/order/new}">
+      <input type="hidden" name="id" th:value="${client.getId()}"/>
+      <button>Новый заказ</button>
+    </form></td>
+  </tr>
+  </tbody>
+</table>
+
+<hr/>
+<br>
+<table style="margin: 0 auto; width: 300px">
+  <tbody>
+  <tr>
+    <td style="text-align: center">
+      <form th:method="GET" th:action="@{/owner/new}">
+        <input type="submit" value="Добавить клиента"/>
+      </form>
+    </td>
+    <td style="text-align: center">
+      <form th:method="GET" th:action="@{/static}">
+        <input type="submit" value="Перейти на главную"/>
+      </form>
+    </td>
+
+  </tr>
+  </tbody>
+
+</table>
+</body>
+</html>
